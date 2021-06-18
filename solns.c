@@ -58,3 +58,27 @@ int mode(int a[], int n)
     }
     return maxvalue;
 }
+
+// factorial function
+
+int factors(int n, int a[])
+{
+
+    int j = 0;
+    int x = n;
+    for (int i = 2; i <= n; i++)
+    {
+
+        if (n % i == 0)
+        {
+
+            a[j] = i;
+            // printf("%d %d %d\n",j,n,a[j]);
+            n = n / i;
+
+            i = 1;
+            j = j + 1;
+        }
+    }
+    return j;
+}
