@@ -24,3 +24,15 @@ int min(int n[], int a)
     }
     return min_tn;
 }
+
+// average function
+float average(int n[], int a)
+{
+    int sum = 0;
+    for (int i = 0; i < a; i++)
+    {
+        sum += n[i];
+    }
+    float average = (float)sum / (float)a;
+    return average;
+}
