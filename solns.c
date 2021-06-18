@@ -1,2 +1,26 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
+
+//maximum function
+int max(int n[], int a)
+{
+  int max_tn = n[0];
+  for (int i = 1; i < a; i++)
+  {
+    if (max_tn < n[i])
+      max_tn = n[i];
+  }
+  return max_tn;
+}
+
+// minimum function
+int min(int n[], int a)
+{
+    int min_tn = n[0];
+    for (int i = 0; i < a; i++)
+    {
+        if (n[i] < min_tn)
+            min_tn = n[i];
+    }
+    return min_tn;
+}
